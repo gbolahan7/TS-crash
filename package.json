@@ -1,9 +1,9 @@
 {
-  "name": "typescript",
+  "name": "ts-crash",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
