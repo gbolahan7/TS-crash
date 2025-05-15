@@ -34,3 +34,51 @@ const coords: [number, number][] = [
 ]; // tuple of two numbers
 coords[0][0] = 10; // change the first number of the first tuple
 coords[0][1] = 20; // change the second number of the first tuple
+
+
+// LITERAL TYPES = this is an instance of primitive types
+
+let direction: "north" | "south" | "east" | "west"; // literal type
+
+direction = "north"; // valid
+direction = "south"; // valid
+direction = "east"; // valid
+direction = "west"; // valid
+// direction = "up"; // invalid, will cause a compile-time error
+
+if (direction = "north") {
+    console.log("Going north"); 
+    
+}
+
+let responseCode: 200 | 404 | 500; // literal type
+responseCode = 200; // valid
+responseCode = 404; // valid
+responseCode = 500; // valid
+// responseCode = 300; // invalid, will cause a compile-time error
+
+// ENUMS: a way to define a set of named constants
+
+enum Size {
+    Small,
+    Medium,
+    Large,
+    ExtraLarge,
+}
+
+Size.Small; // 0
+Size.Medium; // 1
+Size.Large; // 2
+Size.ExtraLarge; // 3
+
+
+
+
+enum Color {
+    Red = "RED",
+    Green = "GREEN",
+    Blue = "BLUE",
+}
+Color.Red; // "RED"
+Color.Green; // "GREEN"
+Color.Blue; // "BLUE"
